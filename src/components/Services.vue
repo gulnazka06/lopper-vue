@@ -42,23 +42,12 @@
                 position: absolute;
                 top: 122px;
             }
-
-
             h4 {
-                font-weight: 800;
-                font-size: 12px;
-                line-height: 26px;
-                letter-spacing: 6px;
-                color: var(--rose);
                 margin: 262px 0 12px;
             }
 
             h3 {
-                font-weight: 500;
-                font-size: 45px;
-                line-height: 67px;
                 color: var(--service-color);
-                text-align: center;
             }
 
             p {
