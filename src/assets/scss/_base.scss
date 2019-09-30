@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--black);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
