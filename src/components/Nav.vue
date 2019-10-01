@@ -1,6 +1,6 @@
 <template>
     <nav class="container">
-        <img src="../assets/img/Logo.svg" alt="">
+        <img src="/assets/img/Logo.svg" alt="">
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Services</a></li>
@@ -8,10 +8,10 @@
             <li><a href="">About</a></li>
         </ul>
         <a href="">
-            <img src="../assets/img/mobile.svg" alt="">
+            <img src="/assets/img/mobile.svg" alt="">
             <span>(01) 666 - 693 - 456</span>
         </a>
-        <button><img src="../assets/img/menu.svg" alt=""></button>
+        <button><img src="/assets/img/menu.svg" alt=""></button>
     </nav>
 </template>
 

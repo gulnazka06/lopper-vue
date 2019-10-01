@@ -1,20 +1,19 @@
 <template>
     <div class="section">
         <div class="content">
-            <h5>01</h5>
-            <h6>Upper prior hundred links approach reedy</h6>
-            <p>Upper prior hundred links approach reedy, was to the
-                <br>than and the ever somehow surprised known for
-                <br>every by of there until road, </p>
+            <h5>{{ order }}</h5>
+            <h6>{{ title }}</h6>
+            <p>{{ description }}</p>
         </div>
-        <img src="../assets/img/work-photo.png" alt="">
-        <img class="colored-shape" src="../assets/img/work-bg.png" alt="">
+        <img src="/assets/img/work-photo.png" alt="">
+        <img class="colored-shape" src="/assets/img/work-bg.png" alt="">
     </div>
 </template>
 
 <script>
     export default {
-        name: "WorkList"
+        name: "WorkList",
+        props: [ 'order', 'title', 'description']
     }
 </script>
 
@@ -43,6 +42,7 @@
                 font-size: 27px;
                 line-height: 40px;
                 color: var(--black);
+                margin: 18px 0;
             }
 
             p {

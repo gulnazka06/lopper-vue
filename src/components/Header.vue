@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
     header {
-        background-image: url("../assets/img/bg-header.png");
+        background-image: url("/assets/img/bg-header.png");
         background-repeat: no-repeat;
 
         .content {

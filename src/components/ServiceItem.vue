@@ -1,16 +1,25 @@
 <template>
-<div class="chopping">
-    <img src="../assets/img/chopping-icon.svg" alt="">
-    <h5>Chopping heads</h5>
-    <p>Tincidunt lobortis feugiat vivamus at
-        <br>augue eget. Risus feugiat in ante metus
-        <br>dictum. Amet aliquam id diam maecenas.</p>
+<div class="chopping" :class="type">
+    <img :src="imgURL" alt="">
+    <h5>{{ title }}</h5>
+    <p>{{ description }}</p>
 </div>
 </template>
 
 <script>
     export default {
-        name: "ServiceItem"
+        name: "ServiceItem",
+        // Скоращенная запись:
+        // props: ['title', 'description', 'imgURL', 'type']
+        // Полная запись:
+        props: {
+            title: {},
+            description: {
+                default: 'ad'
+            },
+            imgURL: {},
+            type: {},
+        }
     }
 </script>
 
@@ -19,9 +28,11 @@
 
         img {
             border-radius: 50%;
-            background-color: var(--chopping-bg-color);
-            border: 1px solid var(--chopping-border-color);
+            background-color:rgba(var(--green-rgb-color), .1);
+            border: 1px solid rgba(var(--green-rgb-color), .25);
             padding: 25px 22px 26px 24px;
+            width: 72px;
+            height: 72px;
         }
 
         h5 {
@@ -36,6 +47,30 @@
             font-size: 16px;
             line-height: 26px;
             color: var(--service-color);
+        }
+
+        &.rose {
+
+            img {
+                background-color:rgba(var(--rose-rgb-color), .1);
+                border: 1px solid rgba(var(--rose-rgb-color), .25);
+            }
+
+            h5 {
+                color: var(--rose);
+            }
+        }
+
+        &.orange {
+
+            img {
+                background-color:rgba(var(--orange-rgb-color), .1);
+                border: 1px solid rgba(var(--orange-rgb-color), .25);
+            }
+
+            h5 {
+                color: var(--orange-color);
+            }
         }
     }
 </style>
