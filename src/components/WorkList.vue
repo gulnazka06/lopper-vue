@@ -1,19 +1,21 @@
 <template>
-    <div class="section">
+    <div class="section" :class="type">
         <div class="content">
             <h5>{{ order }}</h5>
             <h6>{{ title }}</h6>
             <p>{{ description }}</p>
         </div>
-        <img src="/assets/img/work-photo.png" alt="">
-        <img class="colored-shape" src="/assets/img/work-bg.png" alt="">
+        <div class="image">
+            <img :src="imgURL" alt="">
+            <div class="colored-shape"></div>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
         name: "WorkList",
-        props: [ 'order', 'title', 'description']
+        props: [ 'order', 'title', 'description', 'type', 'imgURL']
     }
 </script>
 
@@ -27,7 +29,12 @@
         position: relative;
         margin-bottom: 126px;
 
+        .image {
+            position: relative;
+        }
+
         .content {
+            padding: 0 120px;
 
             h5 {
                 font-weight: 800;
@@ -57,7 +64,38 @@
             bottom: -108px;
             right: 0;
             z-index: -1;
+            border-radius: 0;
+            width: 607px;
+            height: 468px;
+            background-color: var(--rose);
+        }
+
+        &.green {
+
+            .content {
+                order: 2;
+
+                h5 {
+                    color: var(--green);
+                }
+            }
+
+            .colored-shape {
+                right: unset;
+                left: 0;
+                background-color: var(--green);
+            }
+        }
+
+        &.purple {
+
+            h5 {
+                color: var(--purple);
+            }
+
+            .colored-shape {
+                background-color: var(--purple);
+            }
         }
     }
-
 </style>

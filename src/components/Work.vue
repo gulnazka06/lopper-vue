@@ -11,16 +11,21 @@
             order="01"
             title="Upper prior hundred links approach reedy"
             description="Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until road, "
+            imgURL="/assets/img/work-photo.png"
     ></WorkList>
     <WorkList
             order="02"
             title="Upper prior hundred links approach reedy"
             description="Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until road, "
+            type="green"
+            imgURL="/assets/img/macbookpro.png"
     ></WorkList>
     <WorkList
             order="03"
             title="Upper prior hundred links approach reedy"
             description="Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until road, "
+            type="purple"
+            imgURL="/assets/img/mac.png"
     ></WorkList>
 </div>
 </template>
