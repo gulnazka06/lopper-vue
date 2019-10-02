@@ -51,7 +51,7 @@
             }
 
             p {
-                font-weight: 800;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 29px;
                 text-align: center;

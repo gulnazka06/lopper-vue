@@ -69,14 +69,14 @@
                 z-index: 99;
 
                 div {
-                    font-weight: 900;
+                    font-weight: 700;
                     font-size: 99px;
                     line-height: 118px;
                     color: var(--rose);
                 }
 
                 span {
-                    font-weight: 800;
+                    font-weight: 700;
                     font-size: 12px;
                     line-height: 26px;
                     letter-spacing: 6px;

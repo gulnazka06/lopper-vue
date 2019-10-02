@@ -6,6 +6,7 @@
     <Services></Services>
     <Work></Work>
     <Testimonials></Testimonials>
+    <Newsletter></Newsletter>
   </div>
 </template>
 
@@ -17,9 +18,11 @@ import Services from "@/components/Services";
 import Work from "@/components/Work";
 import ServiceItem from "@/components/ServiceItem";
 import Testimonials from "@/components/Testimonials";
+import Newsletter from "@/components/Newsletter";
 export default {
   name: 'app',
   components: {
+    Newsletter,
     Testimonials,
     Work,
     Services,

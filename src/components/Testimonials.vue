@@ -29,6 +29,7 @@
         background-repeat: no-repeat;
         background-color: var(--service-color);
         margin-top: 306px;
+        padding-bottom: 136px;
 
         .image {
             display: flex;
