@@ -24,12 +24,15 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     .testimonials {
         background-image: url("/assets/img/faces.png");
         background-repeat: no-repeat;
         background-color: var(--service-color);
         margin-top: 306px;
-        padding-bottom: 136px;
+        padding: 0 16px 136px;
+        background-size: 100%;
 
         .image {
             display: flex;
@@ -39,6 +42,10 @@
 
             img:first-child {
                 margin-top: -126px;
+
+                @include tablet-landscape {
+                    width: 36%;
+                }
             }
 
             img:last-child {
@@ -73,6 +80,10 @@
                 line-height: 64px;
                 text-align: center;
                 color: var(--black);
+
+                @include tablet-landscape {
+                    font-size: 31px;
+                }
             }
         }
 

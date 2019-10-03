@@ -60,12 +60,13 @@
 
         .prizes {
             display: flex;
+            width: 100%;
+            justify-content: space-between;
 
             .prize {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0 90px;
                 z-index: 99;
 
                 div {

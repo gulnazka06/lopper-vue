@@ -22,11 +22,14 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 60px 0 36px;
+        padding-top: 60px;
+        padding-bottom: 36px;
 
         ul {
             display: flex;
@@ -41,13 +44,22 @@
             display: flex;
             align-items: center;
 
+            @include tablet-portrait {
+                letter-spacing: 1px;
+            }
+
             img {
                 margin-right: 18px;
+
+                @include tablet-portrait {
+                    margin-right: 9px;
+                }
             }
         }
 
         button {
             border: none;
+            background-color: transparent;
         }
     }
 

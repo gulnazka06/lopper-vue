@@ -17,6 +17,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
 ul {
     display: flex;
     flex-direction: column;
@@ -43,6 +45,15 @@ ul {
 
         img {
             margin-right: 42px;
+
+            @include tablet-portrait {
+                margin-bottom: 26px;
+            }
+        }
+
+        @include tablet-portrait {
+            display: grid;
+            grid-template-columns: .5fr .5fr .5fr;
         }
     }
 }

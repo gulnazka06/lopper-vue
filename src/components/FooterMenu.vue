@@ -13,10 +13,16 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     .footer-menu {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        @include tablet-portrait {
+            margin-bottom: 48px;
+        }
 
         h4 {
             font-weight: 700;

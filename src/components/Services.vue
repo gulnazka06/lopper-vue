@@ -37,7 +37,7 @@
                     imgURL="/assets/img/dude.svg"
             ></ServiceItem>
             <ServiceItem
-                    title="Hmmmmmmmmmmmmm"
+                    title="Hmmmm"
                     description="Integer quis auctor elit sed vulputate mi. Semper auctor neque vitae tempus. Vulputate odio ut enim blandit volutpat maecenas volutpat."
                     imgURL="/assets/img/hm.svg"
                     type="rose"
@@ -62,6 +62,7 @@
         background-image: url("/assets/img/service-bg.png");
         position: relative;
         padding-bottom: 98px;
+        overflow-x: hidden;
 
         .container {
             display: flex;
@@ -71,6 +72,9 @@
             img {
                 position: absolute;
                 top: 122px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
             }
             h4 {
                 margin: 262px 0 12px;

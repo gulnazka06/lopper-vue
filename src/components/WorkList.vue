@@ -28,13 +28,19 @@
         grid-gap: 20px;
         position: relative;
         margin-bottom: 126px;
+        width: 100%;
 
         .image {
             position: relative;
+
+            img {
+                width: 100%;
+            }
         }
 
         .content {
-            padding: 0 120px;
+            padding: 0 16px;
+            width: 100%;
 
             h5 {
                 font-weight: 700;
@@ -65,8 +71,8 @@
             right: 0;
             z-index: -1;
             border-radius: 0;
-            width: 607px;
-            height: 468px;
+            width: 85%;
+            height: 110px;
             background-color: var(--rose);
         }
 

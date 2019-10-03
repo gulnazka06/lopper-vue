@@ -62,6 +62,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     footer {
         background-color: var(--footer-bg-color);
         padding-top: 124px;
@@ -69,6 +71,10 @@
         .container {
             display: grid;
             grid-template-columns: 3fr 1fr 1.5fr 2fr 3fr;
+
+            @include tablet-portrait {
+                grid-template-columns: 2fr 1fr 1fr;
+            }
 
             .logo {
                 display: flex;
