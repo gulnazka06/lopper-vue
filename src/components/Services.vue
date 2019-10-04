@@ -58,6 +58,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     .service {
         background-image: url("/assets/img/service-bg.png");
         position: relative;
@@ -75,9 +77,18 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
+
+                @include mobile {
+                    top: 60px;
+                }
             }
+
             h4 {
                 margin: 262px 0 12px;
+
+                @include mobile {
+                    margin: 100px 0 12px;
+                }
             }
 
             h3 {
@@ -97,6 +108,11 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-gap: 70px;
+
+                @include mobile {
+                    grid-template-columns: 1fr;
+                    grid-gap: 40px;
+                }
             }
         }
     }

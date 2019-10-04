@@ -30,6 +30,7 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
 
     .intro {
 
@@ -39,8 +40,12 @@
             align-items: center;
             margin-bottom: -76px;
 
+            @include mobile {
+                margin-bottom: -44px;
+            }
+
             h4 {
-                font-weight: 800;
+                font-weight: 700;
                 font-size: 12px;
                 line-height: 26px;
                 letter-spacing: 6px;
@@ -49,12 +54,16 @@
             }
 
             p {
-                font-weight: 500;
                 font-size: 27px;
                 line-height: 40px;
                 color: var(--black);
                 text-align: center;
                 padding-bottom: 90px;
+
+                @include mobile {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
             }
         }
 
@@ -74,6 +83,11 @@
                     font-size: 99px;
                     line-height: 118px;
                     color: var(--rose);
+
+                    @include mobile {
+                        font-size: 46px;
+                        line-height: 46px;
+                    }
                 }
 
                 span {
@@ -82,6 +96,10 @@
                     line-height: 26px;
                     letter-spacing: 6px;
                     color: var(--service-color);
+
+                    @include mobile {
+                        letter-spacing: 1px;
+                    }
                 }
             }
         }

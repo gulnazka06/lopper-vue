@@ -68,6 +68,10 @@
         background-color: var(--footer-bg-color);
         padding-top: 124px;
 
+        @include mobile {
+            padding-top: 100px;
+        }
+
         .container {
             display: grid;
             grid-template-columns: 3fr 1fr 1.5fr 2fr 3fr;
@@ -76,10 +80,18 @@
                 grid-template-columns: 2fr 1fr 1fr;
             }
 
+            @include mobile {
+                grid-template-columns: 1fr;
+            }
+
             .logo {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+
+                @include mobile {
+                    margin-bottom: 24px;
+                }
 
                 span {
                     font-size: 16px;

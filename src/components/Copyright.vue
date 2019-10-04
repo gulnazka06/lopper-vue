@@ -13,16 +13,25 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
 
     .copyright {
         background-color: var(--footer-bg-color);
         padding: 64px 0 124px;
+
+        @include mobile {
+            padding: 0 0 100px;
+        }
 
         .container {
 
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include mobile {
+                justify-content: flex-start;
+            }
 
             span {
                 color: var(--service-color);

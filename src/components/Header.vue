@@ -17,18 +17,29 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     header {
         background-image: url("/assets/img/bg-header.png");
         background-repeat: no-repeat;
+        background-size: cover;
+
 
         .content {
             padding: 120px 0;
 
+            @include mobile {
+                padding: 100px 0;
+            }
+
             h1 {
-                font-weight: 500;
                 font-size: 54px;
                 line-height: 80px;
                 color: var(--rose);
+
+                @include mobile {
+                    font-size: 50px;
+                }
             }
 
             h2 {

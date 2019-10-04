@@ -34,6 +34,10 @@
         ul {
             display: flex;
 
+            @include mobile {
+                display: none;
+            }
+
             li {
                 padding: 0 27px;
             }
@@ -46,6 +50,10 @@
 
             @include tablet-portrait {
                 letter-spacing: 1px;
+            }
+
+            @include mobile {
+                display: none;
             }
 
             img {

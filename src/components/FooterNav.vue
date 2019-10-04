@@ -24,6 +24,10 @@ ul {
     flex-direction: column;
     margin-top: 34px;
 
+    @include mobile {
+        margin-top: 22px;
+    }
+
     li {
 
         a {

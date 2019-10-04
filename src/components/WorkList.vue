@@ -20,6 +20,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     .section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -29,6 +31,11 @@
         position: relative;
         margin-bottom: 126px;
         width: 100%;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            margin-bottom: 80px;
+        }
 
         .image {
             position: relative;
@@ -51,7 +58,6 @@
             }
 
             h6 {
-                font-weight: 500;
                 font-size: 27px;
                 line-height: 40px;
                 color: var(--black);
@@ -74,12 +80,20 @@
             width: 85%;
             height: 110px;
             background-color: var(--rose);
+
+            @include mobile {
+                bottom: -40px;
+            }
         }
 
         &.green {
 
             .content {
                 order: 2;
+
+                @include mobile {
+                    order: unset;
+                }
 
                 h5 {
                     color: var(--green);

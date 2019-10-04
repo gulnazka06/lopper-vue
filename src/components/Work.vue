@@ -39,12 +39,20 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     .work {
+
         .container{
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 108px 0;
+
+            @include mobile {
+                padding: 100px 0;
+            }
+
 
             h3 {
                 color: var(--black);

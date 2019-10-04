@@ -20,8 +20,14 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/mixin";
+
     .newsletter {
         padding: 130px 0;
+
+        @include mobile {
+            padding: 100px 0;
+        }
 
         .container {
             display: flex;
@@ -29,54 +35,70 @@
             align-items: center;
 
             h5 {
-                font-weight: 500;
                 font-size: 18px;
                 line-height: 27px;
                 text-align: center;
                 color: var(--grey);
                 margin: 45px 0;
+
+                @include mobile {
+                    margin: 30px 0;
+                }
+            }
+
+            h3 {
+                @include mobile {
+                    font-size: 44px;
+                }
             }
 
             div {
-                display: flex;
-                align-items: center;
-                border-bottom: 3px solid var(--header-color);
+                display: grid;
+                grid-template-columns: 2fr 1fr;
                 max-width: 558px;
                 width: 100%;
 
+                @include mobile {
+                    grid-template-columns: 1fr;
+                }
+
                 input {
+                    border-style: solid;
+                    border-color: var(--footer-bg-color);
+                    border-width: 1px 0 1px 1px;
                     font-weight: 700;
-                    font-size: 18px;
                     line-height: 37px;
                     letter-spacing: 4px;
                     color: var(--input-color);
-                    border: none;
-                    width: 100%;
-                    max-width: 332px;
                     padding-left: 18px;
+                    background-color: transparent;
+                    border-radius: 0;
+                    margin: 0;
+                    box-shadow: none;
+
+                    @include mobile {
+                        border-width: 1px 1px 0;
+                    }
                 }
 
                 button {
-                    background-image: var(--button-bg-color);
+                    background: transparent;
                     font-weight: 700;
                     font-size: 12px;
-                    line-height: 26px;
                     display: flex;
+                    justify-content: center;
                     align-items: center;
-                    letter-spacing: 6px;
                     color: var(--rose);
-                    max-width: 226px;
+                    letter-spacing: .6px;
                     width: 100%;
-                    border: none;
-                    padding-left: 27px;
+                    border: 1px solid var(--rose);
+                    padding: 15px 10px;
+                    margin: 0;
 
                     img {
-                        border-radius: 50%;
-                        padding: 0 12px;
-                        width: 36px;
-                        height: 36px;
-                        border: 1px solid var(--rose);
-                        margin-left: 20px;
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 10px;
                     }
                 }
             }

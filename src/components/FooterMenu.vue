@@ -24,6 +24,10 @@
             margin-bottom: 48px;
         }
 
+        @include mobile {
+            margin-bottom: 36px;
+        }
+
         h4 {
             font-weight: 700;
             font-size: 12px;

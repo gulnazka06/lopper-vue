@@ -34,6 +34,11 @@
         padding: 0 16px 136px;
         background-size: 100%;
 
+        @include mobile {
+            margin-top: 210px;
+            padding: 0 16px 100px;
+        }
+
         .image {
             display: flex;
             justify-content: flex-start;
@@ -46,10 +51,20 @@
                 @include tablet-landscape {
                     width: 36%;
                 }
+
+                @include mobile {
+                    width: 136px;
+                    margin-top: -100px;
+                }
             }
 
             img:last-child {
                 margin-top: -32px;
+
+                @include mobile {
+                    width: 15%;
+                    margin-top: -13px;
+                }
             }
         }
 
@@ -60,6 +75,10 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 116px 0 30px;
+
+                @include mobile {
+                    padding: 66px 0 30px;
+                }
 
                 img {
                     border-radius: 50%;
@@ -84,6 +103,11 @@
                 @include tablet-landscape {
                     font-size: 31px;
                 }
+
+                @include mobile {
+                    font-size: 22px;
+                    line-height: 50px;
+                }
             }
         }
 
@@ -93,7 +117,7 @@
             line-height: 29px;
 
             span {
-                font-weight: 800;
+                font-weight: 700;
                 font-size: 18px;
                 line-height: 29px;
                 color: var(--rose);
