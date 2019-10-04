@@ -1,23 +1,33 @@
 <template>
     <nav class="container">
         <img src="/assets/img/Logo.svg" alt="">
-        <ul>
+        <ul :class="{ open: isOpen }">
             <li><a href="">Home</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Work</a></li>
             <li><a href="">About</a></li>
         </ul>
-        <a href="">
+        <a href="" class="phone">
             <img src="/assets/img/mobile.svg" alt="">
             <span>(01) 666 - 693 - 456</span>
         </a>
-        <button><img src="/assets/img/menu.svg" alt=""></button>
+        <button v-on:click="onMenuClick"><img src="/assets/img/menu.svg" alt=""></button>
     </nav>
 </template>
 
 <script>
     export default {
-        name: "Nav"
+        name: "Nav",
+        data() {
+            return {
+                isOpen: false,
+            };
+        },
+        methods: {
+            onMenuClick() {
+                this.isOpen = !this.isOpen;
+            }
+        }
     }
 </script>
 
@@ -30,12 +40,34 @@
         align-items: center;
         padding-top: 60px;
         padding-bottom: 36px;
+        background-color: var(--white);
+
+        @include mobile {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
 
         ul {
             display: flex;
 
             @include mobile {
-                display: none;
+                position: absolute;
+                top: 100%;
+                width: 100vw;
+                left: 0;
+                background-color: var(--white);
+                opacity: 0;
+                transition: .3s;
+                visibility: hidden;
+                transform: translateY(-100%);
+                padding-bottom: 20px;
+
+                &.open {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0%);
+                }
             }
 
             li {
@@ -48,12 +80,14 @@
             display: flex;
             align-items: center;
 
-            @include tablet-portrait {
-                letter-spacing: 1px;
+            @include mobile {
+                &.phone {
+                    display: none;
+                }
             }
 
-            @include mobile {
-                display: none;
+            @include tablet-portrait {
+                letter-spacing: 1px;
             }
 
             img {
