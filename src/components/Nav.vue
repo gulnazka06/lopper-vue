@@ -7,9 +7,9 @@
             <li><a href="">Work</a></li>
             <li><a href="">About</a></li>
         </ul>
-        <a href="" class="phone">
+        <a href="tel:89509488859" class="phone">
             <img src="/assets/img/mobile.svg" alt="">
-            <span>(01) 666 - 693 - 456</span>
+            <span>+7 (950) 948-88-59</span>
         </a>
         <button v-on:click="onMenuClick"><img src="/assets/img/menu.svg" alt=""></button>
     </nav>
@@ -46,6 +46,8 @@
             position: sticky;
             top: 0;
             z-index: 999;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         ul {
@@ -62,6 +64,7 @@
                 visibility: hidden;
                 transform: translateY(-100%);
                 padding-bottom: 20px;
+                flex-wrap: wrap;
 
                 &.open {
                     opacity: 1;

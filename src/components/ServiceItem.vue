@@ -36,8 +36,6 @@
         }
 
         h5 {
-            font-size: 18px;
-            line-height: 27px;
             color: var(--green);
             margin: 18px 0 26px;
         }

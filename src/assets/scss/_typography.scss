@@ -4,6 +4,26 @@ body {
   font-family: Oxygen, Helvetica, -apple-system, sans-serif;
 }
 
+h1 {
+  font-size: 54px;
+  line-height: 80px;
+  color: var(--rose);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 4px;
+  color: var(--header-color);
+}
+
+h3 {
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+}
+
 h4 {
   font-weight: 700;
   font-size: 12px;
@@ -12,8 +32,14 @@ h4 {
   color: var(--rose);
 }
 
-h3 {
-  font-size: 45px;
-  line-height: 67px;
-  text-align: center;
+h5 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+h6 {
+  font-size: 27px;
+  line-height: 40px;
+  color: var(--black);
+  margin: 18px 0;
 }

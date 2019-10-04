@@ -35,8 +35,6 @@
             align-items: center;
 
             h5 {
-                font-size: 18px;
-                line-height: 27px;
                 text-align: center;
                 color: var(--grey);
                 margin: 45px 0;

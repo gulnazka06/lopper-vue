@@ -45,11 +45,6 @@
             }
 
             h4 {
-                font-weight: 700;
-                font-size: 12px;
-                line-height: 26px;
-                letter-spacing: 6px;
-                color: var(--rose);
                 margin: 108px 0 15px;
             }
 

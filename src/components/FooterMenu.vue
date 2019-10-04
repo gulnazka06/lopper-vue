@@ -29,9 +29,6 @@
         }
 
         h4 {
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 26px;
             color: var(--service-color);
             border-bottom: 1px solid var(--rose);
         }

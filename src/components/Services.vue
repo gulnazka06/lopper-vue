@@ -64,7 +64,6 @@
         background-image: url("/assets/img/service-bg.png");
         position: relative;
         padding-bottom: 98px;
-        overflow-x: hidden;
 
         .container {
             display: flex;

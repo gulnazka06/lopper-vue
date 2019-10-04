@@ -39,6 +39,7 @@
 
         .image {
             position: relative;
+            width: 100%;
 
             img {
                 width: 100%;
@@ -51,17 +52,9 @@
 
             h5 {
                 font-weight: 700;
-                font-size: 18px;
                 line-height: 37px;
                 letter-spacing: 4px;
                 color: var(--rose);
-            }
-
-            h6 {
-                font-size: 27px;
-                line-height: 40px;
-                color: var(--black);
-                margin: 18px 0;
             }
 
             p {

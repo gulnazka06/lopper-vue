@@ -33,21 +33,10 @@
             }
 
             h1 {
-                font-size: 54px;
-                line-height: 80px;
-                color: var(--rose);
 
                 @include mobile {
                     font-size: 50px;
                 }
-            }
-
-            h2 {
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 37px;
-                letter-spacing: 4px;
-                color: var(--header-color);
             }
         }
     }
